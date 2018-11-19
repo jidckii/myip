@@ -11,7 +11,10 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	body, _ := ioutil.ReadAll(ip4.Body)
+	body, err := ioutil.ReadAll(ip4.Body)
+	if err != nil {
+		panic(err)
+	}
 	text := string(body)
 	fmt.Println(text)
 }
