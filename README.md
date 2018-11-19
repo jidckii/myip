@@ -1,4 +1,4 @@
-# MYIP  
+# myip  
 
 Simple cli utility for get public ipv4 address.  
 
